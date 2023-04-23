@@ -1,4 +1,6 @@
-
+:root {
+  --text-color-green: rgb(112, 179, 112);
+}
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -28,6 +30,11 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #222;
+  background-image: url('https://gen.jut.su/chakranature/background_main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
 }
 
 img {
@@ -35,6 +42,13 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* CONTAINER */
 .container {
@@ -50,4 +64,192 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+
+/* SITE HEADER */
+.site-header {
+  margin-bottom: 25px;
+  background-color: rgb(136, 235, 136);
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.moon-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sitenav-list {
+  display: flex;
+  text-align: center;
+}
+
+.sitenav-link-start {
+  height: 70px;
+  padding: 20px;
+  font-size: 14px;
+  color: var(--text-color-green);
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(117, 179, 117),
+    white
+    );
+    border-right: 3px solid rgb(118, 209, 118);
+    border-left: 3px solid rgb(118, 209, 118);
+}
+
+.sitenav-link {
+  padding: 20px;
+  font-size: 14px;
+  color: var(--text-color-green);
+  text-transform: uppercase;
+}
+
+.sitenav-link:hover {
+  background-image: linear-gradient(
+  to bottom,
+  rgb(112, 179, 112),
+  white
+  );
+  border-right: 3px solid rgb(118, 209, 118);
+  border-left: 3px solid rgb(118, 209, 118);
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+/* LOGO */
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.site-header-logo-img {
+  width: 345px;
+  height: 115px;
+  object-fit: cover;
+}
+
+
+/* MAIN */
+.main-content {
+}
+.main-content-container {
+  width: 100%;
+  max-width: 1120px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 75px;
+  border-radius: 10px;
+  background-image: linear-gradient(0deg, rgba(34,195,88,1) 0%, rgba(164,223,67,1) 49%, rgba(231,253,45,1) 100%);;
+}
+
+/* COME IN SITE */
+.btn-come-in {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(204, 245, 204);
+}
+
+.btn-come-in-text {
+  margin: 0;
+  color: var(--text-color-green);
+}
+
+.text-max {
+  font-size: 16px;
+}
+.text-min {
+  font-size: 12px;
+}
+
+/* FORM */
+.search-input {
+  width: 425px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 0;
+  color: var(--text-color-green);
+  background-color: rgb(204, 245, 204);
+}
+.form-button {
+  padding: 5px 15px;
+  margin-left: 15px;
+  border-radius: 6px;
+  background-color: rgb(204, 245, 204);
+
+}
+
+.search-btn-link {
+  font-size: 18px;
+  color: var(--text-color-green);
+}
+
+
+/* CIRCLES */
+.circles-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.circle-plus {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgb(204, 245, 204);
+}
+.plus-img {
+  object-fit: cover;
+}
+
+.circle-vk {
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding-top: 9px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgb(204, 245, 204);
+}
+.vk-img {
+  object-fit: cover;
+}
+
+.circle-youtube {
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 8px;
+  border-radius: 50%;
+  background-color: rgb(204, 245, 204);
+}
+.youtube-img {
+  object-fit: cover;
 }
