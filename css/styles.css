@@ -285,7 +285,7 @@ a {
 /* MAIN-HERO */
 .main-hero {
   margin-top: 0;
-  background-color: white;
+  background-color: rgb(246, 247, 236);
 }
 
 .hero-2-1 {
@@ -308,10 +308,12 @@ a {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .hero-order-anime-list {
   display: flex;
   margin: 0;
 }
+
 .hero-order-list-item {
   width: 200px;
   text-align: center;
@@ -325,6 +327,7 @@ a {
 .hero-order-item-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -350,6 +353,7 @@ a {
 /* HERO-RECOMENDS */
 .hero-recomends {
 }
+
 .hero-recomends-heading {
   text-align: center;
   font-size: 14px;
